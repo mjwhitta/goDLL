@@ -11,4 +11,6 @@ for the same level of control.
 
 **Note:** This is merely an example. If you need additional
 functionality (e.g. mutex to prevent multiple executions), that's an
-exercise left for you.
+exercise left for you. Additionally, while there exist exports to use
+with `regsvr32` and `rundll`, it is recommended to removed what you
+don't need and add exports unique to your use-case.

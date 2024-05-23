@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"time"
+	"fmt"
 
 	"golang.org/x/sys/windows"
 )
@@ -22,5 +22,6 @@ func main() {
 		println(e.Error())
 	}
 
-	time.Sleep(2 * time.Second)
+	fmt.Println("Press enter")
+	fmt.Scanln()
 }
