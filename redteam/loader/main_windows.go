@@ -22,6 +22,6 @@ func main() {
 		println(e.Error())
 	}
 
-	fmt.Println("Press enter")
+	fmt.Println("Press enter to exit")
 	fmt.Scanln()
 }
