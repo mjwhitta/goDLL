@@ -1,0 +1,41 @@
+{
+  "FixedFileInfo": {
+    "FileVersion": {
+      "Major": 1,
+      "Minor": 3,
+      "Patch": 3,
+      "Build": 7
+    },
+    "ProductVersion": {
+      "Major": 1,
+      "Minor": 3,
+      "Patch": 3,
+      "Build": 7
+    },
+    "FileFlagsMask": "3f",
+    "FileFlags ": "00",
+    "FileOS": "040004",
+    "FileType": "01",
+    "FileSubType": "00"
+  },
+  "StringFileInfo": {
+    "Comments": "",
+    "CompanyName": "Nation-State",
+    "FileDescription": "",
+    "FileVersion": "1.3.3.7",
+    "InternalName": "loader",
+    "LegalCopyright": "",
+    "LegalTrademarks": "",
+    "OriginalFilename": "loader",
+    "PrivateBuild": "",
+    "ProductName": "GoDLL Loader",
+    "ProductVersion": "1.3.3.7",
+    "SpecialBuild": ""
+  },
+  "VarFileInfo": {
+    "Translation": {
+      "LangID": "0409",
+      "CharsetID": "04B0"
+    }
+  }
+}

@@ -3,6 +3,12 @@
 # Setup ENV for EXEs
 export GOOS=windows
 
+# Generate versioninfo
+if [[ -n $(command -v goversioninfo) ]]; then
+    goversioninfo --platform-specific
+    (cd loader && goversioninfo --platform-specific)
+fi
+
 # Compile EXE for windows
 mkdir -p build
 go build --buildvcs=false --ldflags="-H=windowsgui -s -w" \
@@ -22,3 +28,4 @@ mkdir -p build
 go build --buildmode=c-shared --buildvcs=false --ldflags="-s -w" \
     -o "build/goDLL.dll" --tags=dll --trimpath .
 
+find . -name "resource_windows*.syso" -delete
