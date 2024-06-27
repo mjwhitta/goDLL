@@ -1,21 +1,15 @@
 #!/usr/bin/env bash
 
+mkdir -p build
+
 # Setup ENV for EXEs
 export GOOS=windows
 
-# Generate versioninfo
-if [[ -n $(command -v goversioninfo) ]]; then
-    goversioninfo --platform-specific
-    (cd loader && goversioninfo --platform-specific)
-fi
-
 # Compile EXE for windows
-mkdir -p build
 go build --buildvcs=false --ldflags="-H=windowsgui -s -w" \
     -o "build/goDLL.exe" --trimpath .
 
 # Compile loader for DLLs
-mkdir -p build
 go build --buildvcs=false --ldflags="-s -w" -o build/loader.exe \
     --trimpath ./loader
 
@@ -24,8 +18,5 @@ export CC=x86_64-w64-mingw32-gcc
 export CGO_ENABLED=1
 
 # Compile DLL for windows using mingw
-mkdir -p build
 go build --buildmode=c-shared --buildvcs=false --ldflags="-s -w" \
     -o "build/goDLL.dll" --tags=dll --trimpath .
-
-find . -name "resource_windows*.syso" -delete
