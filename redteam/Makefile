@@ -7,7 +7,7 @@ all: build
 
 build: fmt dir
 	@go build --buildvcs=false --ldflags="-H=windowsgui -s -w" -o build/goDLL.exe --trimpath .
-	@go build --buildvcs=false --ldflags="-H=windowsgui -s -w" -o build/loader.exe --trimpath ./loader
+	@go build --buildvcs=false --ldflags="-s -w" -o build/loader.exe --trimpath ./loader
 	@go build --buildmode=c-shared --buildvcs=false --ldflags="-s -w" -o build/goDLL.dll --tags=dll --trimpath .
 
 # OS specific
