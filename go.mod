@@ -1,10 +1,10 @@
 module github.com/mjwhitta/goDLL
 
-go 1.22.2
+go 1.25
 
-require github.com/mjwhitta/win v0.24.5
+require github.com/mjwhitta/win v0.26.0
 
 require (
-	github.com/mjwhitta/errors v1.0.3 // indirect
-	golang.org/x/sys v0.21.0 // indirect
+	github.com/mjwhitta/errors v1.0.5 // indirect
+	golang.org/x/sys v0.33.0 // indirect
 )
