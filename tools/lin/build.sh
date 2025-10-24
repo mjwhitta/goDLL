@@ -2,11 +2,26 @@
 
 mkdir -p build
 
-# Setup ENV
+# Setup ENV for EXEs
+export GOOS=windows
+
+# Compile EXE for windows
+go build --buildvcs=false --ldflags="-H=windowsgui -s -w" \
+    -o ./build/goDLL.exe --trimpath .
+
+# Compile loader for DLLs
+if [[ -d ./loader ]]; then
+    go build --buildvcs=false --ldflags="-s -w" \
+        -o ./build/loader.exe --trimpath ./loader
+elif [[ -d ../loader ]]; then
+    go -C ../ build --buildvcs=false --ldflags="-s -w" \
+        -o ./redteam/build/loader.exe --trimpath ./loader
+fi
+
+# Setup ENV for DLLs
 export CC=x86_64-w64-mingw32-gcc
 export CGO_ENABLED=1
-export GOOS=windows
 
 # Compile DLL for windows using mingw
 go build --buildmode=c-shared --buildvcs=false --ldflags="-s -w" \
-    -o "build/goDLL.dll" --tags=dll --trimpath .
+    -o ./build/goDLL.dll --tags=dll --trimpath .

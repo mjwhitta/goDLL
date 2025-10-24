@@ -1,8 +1,7 @@
 # What is this?
 
-**Note:** The compiled DLL [will not work][issue] with `loader.exe` in
-[redteam/loader](./redteam/loader), if compiled with Go v1.25.0 or
-newer.
+**Note:** The compiled DLL [will not work][issue] with `loader.exe`,
+if compiled with Go v1.25.0 or newer.
 
 This repo contains a fairly simple example of creating a DLL using Go
 and MinGW. Simply run `make` to compile. Artifacts will be in the
