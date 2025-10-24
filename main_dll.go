@@ -8,6 +8,7 @@ import "C"
 //
 //export DllRegisterServer
 func DllRegisterServer() {
+	bin = "dll"
 	main()
 }
 
@@ -15,6 +16,7 @@ func DllRegisterServer() {
 //
 //export DllUnregisterServer
 func DllUnregisterServer() {
+	bin = "dll"
 	main()
 }
 
@@ -22,5 +24,6 @@ func DllUnregisterServer() {
 //
 //export Main
 func Main() {
+	bin = "dll"
 	main()
 }
