@@ -1,6 +1,6 @@
 # What is this?
 
-**Note:** The compiled DLL will not work with `loader.exe` in
+**Note:** The compiled DLL [will not work][issue] with `loader.exe` in
 [redteam/loader](./redteam/loader), if compiled with Go v1.25.0 or
 newer.
 
@@ -19,3 +19,5 @@ functionality (e.g. mutex to prevent multiple executions), that's an
 exercise left for you. Additionally, while there exist exports to use
 with `regsvr32` and `rundll`, it is recommended to remove what you
 don't need and add exports unique to your use-case.
+
+[issue]: https://github.com/golang/go/issues/75949
