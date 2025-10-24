@@ -1,4 +1,4 @@
-module github.com/mjwhitta/goDLL
+module github.com/mjwhitta/goDLL/redteam
 
 go 1.24.0
 
