@@ -4,7 +4,7 @@ package main
 
 import (
 	"flag"
-	"fmt"
+	"time"
 
 	"golang.org/x/sys/windows"
 )
@@ -24,6 +24,8 @@ func main() {
 		println(e.Error())
 	}
 
-	fmt.Println("Press enter to exit")
-	fmt.Scanln()
+	println("Press ^C to exit")
+	for {
+		time.Sleep(time.Hour)
+	}
 }
