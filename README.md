@@ -14,4 +14,6 @@ for the same level of control.
 functionality (e.g. mutex to prevent multiple executions), that's an
 exercise left for you. Additionally, while there exist exports to use
 with `regsvr32` and `rundll`, it is recommended to remove what you
-don't need and add exports unique to your use-case.
+don't need and add exports unique to your use-case. See
+[mpcmdrun.go.ref](./redteam/mpcmdrun.go.ref) for examples that work
+with `MpCmdRun.exe` (loads `mpclient.dll` from the same directory).

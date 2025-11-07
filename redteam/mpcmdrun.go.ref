@@ -1,0 +1,302 @@
+//go:build dll && windows
+
+package main
+
+import "C"
+
+// MpAddDynamicSignatureFile from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpAddDynamicSignatureFile
+func MpAddDynamicSignatureFile() {}
+
+// MpAllocMemory from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpAllocMemory
+func MpAllocMemory() {}
+
+// MpCleanOpen from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpCleanOpen
+func MpCleanOpen() {}
+
+// MpCleanStart from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpCleanStart
+func MpCleanStart() {}
+
+// MpClientUtilExportFunctions from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpClientUtilExportFunctions
+func MpClientUtilExportFunctions() {}
+
+// MpConfigClose from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConfigClose
+func MpConfigClose() {}
+
+// MpConfigDelValue from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConfigDelValue
+func MpConfigDelValue() {}
+
+// MpConfigGetValue from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConfigGetValue
+func MpConfigGetValue() {}
+
+// MpConfigGetValueAlloc from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConfigGetValueAlloc
+func MpConfigGetValueAlloc() {}
+
+// MpConfigInitialize from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConfigInitialize
+func MpConfigInitialize() {}
+
+// MpConfigIteratorClose from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConfigIteratorClose
+func MpConfigIteratorClose() {}
+
+// MpConfigIteratorEnum from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConfigIteratorEnum
+func MpConfigIteratorEnum() {}
+
+// MpConfigIteratorOpen from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConfigIteratorOpen
+func MpConfigIteratorOpen() {}
+
+// MpConfigOpen from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConfigOpen
+func MpConfigOpen() {}
+
+// MpConfigSetValue from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConfigSetValue
+func MpConfigSetValue() {}
+
+// MpConfigUninitialize from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConfigUninitialize
+func MpConfigUninitialize() {}
+
+// MpConveySampleSubmissionResult from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpConveySampleSubmissionResult
+func MpConveySampleSubmissionResult() {}
+
+// MpDynamicSignatureEnumerate from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpDynamicSignatureEnumerate
+func MpDynamicSignatureEnumerate() {}
+
+// MpDynamicSignatureOpen from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpDynamicSignatureOpen
+func MpDynamicSignatureOpen() {}
+
+// MpEffectiveConfigurationReport from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpEffectiveConfigurationReport
+func MpEffectiveConfigurationReport() {}
+
+// MpFreeMemory from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpFreeMemory
+func MpFreeMemory() {}
+
+// MpGetDeviceControlSecurityPolicies from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpGetDeviceControlSecurityPolicies
+func MpGetDeviceControlSecurityPolicies() {}
+
+// MpGetDevMode from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpGetDevMode
+func MpGetDevMode() {}
+
+// MpGetNpSupportFile from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpGetNpSupportFile
+func MpGetNpSupportFile() {}
+
+// MpGetSampleChunk from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpGetSampleChunk
+func MpGetSampleChunk() {}
+
+// MpGetTaskSchedulerStrings from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpGetTaskSchedulerStrings
+func MpGetTaskSchedulerStrings() {}
+
+// MpGetTDTFeatureStatus from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpGetTDTFeatureStatus
+func MpGetTDTFeatureStatus() {}
+
+// MpGetTDTFeatureStatusEx from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpGetTDTFeatureStatusEx
+func MpGetTDTFeatureStatusEx() {}
+
+// MpGetTPStateInfo from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpGetTPStateInfo
+func MpGetTPStateInfo() {}
+
+// MpGetTSModeInfo from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpGetTSModeInfo
+func MpGetTSModeInfo() {}
+
+// MpHandleClose from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpHandleClose
+func MpHandleClose() {}
+
+// MpManagerEnable from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpManagerEnable
+func MpManagerEnable() {}
+
+// MpManagerOpen from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpManagerOpen
+func MpManagerOpen() {}
+
+// MpManagerStatusQuery from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpManagerStatusQuery
+func MpManagerStatusQuery() {}
+
+// MpManagerStatusQueryEx from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpManagerStatusQueryEx
+func MpManagerStatusQueryEx() {}
+
+// MpManagerVersionQuery from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpManagerVersionQuery
+func MpManagerVersionQuery() {}
+
+// MpNetworkCapture from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpNetworkCapture
+func MpNetworkCapture() {}
+
+// MpQuarantineRequest from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpQuarantineRequest
+func MpQuarantineRequest() {}
+
+// MpQueryEngineConfigDword from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpQueryEngineConfigDword
+func MpQueryEngineConfigDword() {}
+
+// MpRemoveDynamicSignatureFile from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpRemoveDynamicSignatureFile
+func MpRemoveDynamicSignatureFile() {}
+
+// MpRollbackPlatform from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpRollbackPlatform
+func MpRollbackPlatform() {}
+
+// MpSampleQuery from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpSampleQuery
+func MpSampleQuery() {}
+
+// MpSampleSubmit from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpSampleSubmit
+func MpSampleSubmit() {}
+
+// MpScanControl from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpScanControl
+func MpScanControl() {}
+
+// MpScanResult from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpScanResult
+func MpScanResult() {}
+
+// MpScanStartEx from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpScanStartEx
+func MpScanStartEx() {}
+
+// MpServiceLogMessage from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpServiceLogMessage
+func MpServiceLogMessage() {}
+
+// MpSetTPState from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpSetTPState
+func MpSetTPState() {}
+
+// MpThreatEnumerate from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpThreatEnumerate
+func MpThreatEnumerate() {}
+
+// MpThreatOpen from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpThreatOpen
+func MpThreatOpen() {}
+
+// MpUnblockEngine from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpUnblockEngine
+func MpUnblockEngine() {}
+
+// MpUnblockPlatform from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpUnblockPlatform
+func MpUnblockPlatform() {}
+
+// MpUnblockSignatures from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpUnblockSignatures
+func MpUnblockSignatures() {}
+
+// MpUpdatePlatform from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpUpdatePlatform
+func MpUpdatePlatform() {}
+
+// MpUpdateStart from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpUpdateStart
+func MpUpdateStart() {}
+
+// MpUpdateStartEx from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpUpdateStartEx
+func MpUpdateStartEx() {}
+
+// MpUpdateTSModeEx from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpUpdateTSModeEx
+func MpUpdateTSModeEx() {}
+
+// MpUtilsExportFunctions from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpUtilsExportFunctions
+func MpUtilsExportFunctions() {
+	// TODO payload here
+}
+
+// MpWDEnable from mpclient.dll called by MpCmdRun.exe.
+//
+//export MpWDEnable
+func MpWDEnable() {}
