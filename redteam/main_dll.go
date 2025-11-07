@@ -14,8 +14,9 @@ func DllRegisterServer() {}
 //export DllUnregisterServer
 func DllUnregisterServer() {}
 
-// This causes the real main to be called by LoadLibrary() and
-// rundll32.exe, hence why Main() is empty.
+// This causes the real main() to be called by LoadLibrary(),
+// regsvr32.exe, and rundll32.exe. This is why all the exports are
+// empty.
 func init() {
 	bin = "dll"
 	main()
